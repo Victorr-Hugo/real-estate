@@ -1,10 +1,9 @@
-import React from "react";
 import { Layout } from "../components/Layout";
 
-export default function HomeView() {
+export default function ManagerView() {
   return (
     <Layout layout={{}}>
-      <div>HomeView</div>
+      <div>Manager view</div>
     </Layout>
   );
 }

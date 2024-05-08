@@ -1,5 +1,10 @@
 import React from "react";
+import { Layout } from "../components/Layout";
 
 export default function AuthView() {
-  return <div>AuthView</div>;
+  return (
+    <Layout layout={{}}>
+      <div>AuthView</div>
+    </Layout>
+  );
 }

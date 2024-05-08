@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { auth } from "../utils/firebase";
 import { AuthView, HomeView } from "../views";
+import ManagerView from "../views/ManagerView";
 
 const ProtectedRoute: React.FC<{ element: React.ReactNode }> = ({
   element,
@@ -40,7 +41,7 @@ export default function AppRouter() {
             <ProtectedRoute
               element={
                 <>
-                  <Route path="manager" element={<></>} />
+                  <Route path="manager" element={<ManagerView />} />
                 </>
               }
             />
